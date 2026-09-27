@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Project - Rifki Alfatah Design</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Rifki Alfatah Design</h1>
+
+        <p>
+            Portfolio desain dan karya kreatif Rifki Alfatah.
+        </p>
+
+        <nav>
+            <a href="tugasindividu.html">Beranda</a>
+            <a href="tambah_project.html">Tambah Project</a>
+            <a href="detail-project.html">Detail Project</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>Tambah Project</h2>
+
+            <p>
+                Tambahkan informasi project ke dalam portfolio.
+            </p>
+
+            <form>
+
+                <div>
+                    <label for="nama-project">
+                        Nama Project:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama-project"
+                        name="nama-project"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="kategori">
+                        Kategori:
+                    </label>
+
+                    <select
+                        id="kategori"
+                        name="kategori"
+                        required
+                    >
+                        <option value="">
+                            Pilih kategori
+                        </option>
+
+                        <option value="poster">
+                            Poster
+                        </option>
+
+                        <option value="ui-ux">
+                            UI/UX Design
+                        </option>
+
+                        <option value="branding">
+                            Branding
+                        </option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="deskripsi">
+                        Deskripsi Project:
+                    </label>
+
+                    <textarea
+                        id="deskripsi"
+                        name="deskripsi"
+                        rows="5"
+                        cols="40"
+                        required
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="gambar">
+                        Gambar Project:
+                    </label>
+
+                    <input
+                        type="file"
+                        id="gambar"
+                        name="gambar"
+                        accept="image/*"
+                    >
+                </div>
+
+                <br>
+
+                <button type="submit">
+                    Simpan Project
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Rifki Alfatah Design
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
