@@ -27,7 +27,29 @@ header{
     padding : 20px;
     text-align: center;
 }
+nav{
+    background-color: #E6F3FF;
+    padding: 15px;
+    text-align: center;
+}
 
-
+nav a{
+    color: #0D47A1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #2196F3;
+}
+main{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+selection{
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 
