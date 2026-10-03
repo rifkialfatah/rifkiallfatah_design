@@ -3,22 +3,27 @@ body{
     font-size: 16px;
     color: #0D47A1(117, 17, 17);
     background-color: #b4d1ec(162, 27, 27);
+    line-height: 1.6;
 
 }
 h1{
     color:#2196F3(117, 17, 17);
     Font-weight: bold;
     font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 15px;
 }
 h2{
     color:2196F3(117, 17, 17);
     font-weight: bold;
     font-size: 28px;
+    margin-bottom: 12px;
 }
 h3{
     color: #0D47A1(117, 17, 17);
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 header{
@@ -51,5 +56,8 @@ selection{
     padding: 20px;
     margin-bottom: 30px;
 }
-
+p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
 
