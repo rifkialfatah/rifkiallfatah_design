@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir untuk menambahkan karya desain Rifki Alfatah.">
+    <title>Tambah Desain | Rifki Alfatah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RIFKI ALFATAH</h1>
+        <p>Graphic Designer</p>
+
+        <nav aria-label="Navigasi utama">
+            <a href="tugasindividu.html">Beranda</a>
+            <a href="karya_desain.html">Karya Desain</a>
+            <a href="pengalaman.html">Pengalaman</a>
+            <a href="tambah_project.html">Tambah Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tambah Karya Desain</h2>
+            <p>
+                Isi formulir berikut untuk menambahkan karya desain
+                ke dalam portofolio.
+            </p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <label for="judul">Judul Karya</label>
+                    <input
+                        type="text"
+                        id="judul"
+                        name="judul"
+                        placeholder="Masukkan judul karya"
+                        required>
+                </div>
+
+                <div>
+                    <label for="kategori">Kategori Desain</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">Pilih kategori</option>
+                        <option value="Poster">Poster</option>
+                        <option value="Banner">Banner</option>
+                        <option value="Instagram Feed">Instagram Feed</option>
+                        <option value="Photo Editing">Photo Editing</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tahun">Tahun Pembuatan</label>
+                    <input
+                        type="number"
+                        id="tahun"
+                        name="tahun"
+                        placeholder="Contoh: 2026"
+                        min="2000"
+                        max="2100"
+                        required>
+                </div>
+
+                <div>
+                    <label for="deskripsi">Deskripsi Karya</label>
+                    <textarea
+                        id="deskripsi"
+                        name="deskripsi"
+                        rows="5"
+                        placeholder="Jelaskan karya desain kamu..."
+                        required></textarea>
+                </div>
+
+                <div>
+                    <label for="aplikasi">Aplikasi yang Digunakan</label>
+                    <input
+                        type="text"
+                        id="aplikasi"
+                        name="aplikasi"
+                        placeholder="Contoh: Canva, Photoshop">
+                </div>
+
+                <div>
+                    <label for="gambar">Unggah Gambar</label>
+                    <input
+                        type="file"
+                        id="gambar"
+                        name="gambar"
+                        accept="image/*"
+                        required>
+                </div>
+
+                <div>
+                    <button type="submit">Simpan Karya</button>
+                    <a href="tambah_project.html">Batal</a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rifki Alfatah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

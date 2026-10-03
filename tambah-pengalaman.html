@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir untuk menambahkan pengalaman organisasi dan kepanitiaan Rifki Alfatah.">
+    <title>Tambah Pengalaman | Rifki Alfatah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RIFKI ALFATAH</h1>
+        <p>Graphic Designer</p>
+
+        <nav aria-label="Navigasi utama">
+            <a href="tugasindividu.html">Beranda</a>
+            <a href="karya_desain.html">Karya Desain</a>
+            <a href="pengalaman.html">Pengalaman</a>
+            <a href="tambah_project.html">Tambah Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tambah Pengalaman</h2>
+            <p>
+                Isi formulir berikut untuk menambahkan pengalaman
+                organisasi atau kepanitiaan ke dalam portofolio.
+            </p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <label for="nama-kegiatan">Nama Organisasi atau Kegiatan</label>
+                    <input
+                        type="text"
+                        id="nama-kegiatan"
+                        name="nama-kegiatan"
+                        placeholder="Contoh: Smartvest 2026"
+                        required>
+                </div>
+
+                <div>
+                    <label for="jenis">Jenis Pengalaman</label>
+                    <select id="jenis" name="jenis" required>
+                        <option value="">Pilih jenis pengalaman</option>
+                        <option value="Organisasi">Organisasi</option>
+                        <option value="Kepanitiaan">Kepanitiaan</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="posisi">Posisi atau Jabatan</label>
+                    <input
+                        type="text"
+                        id="posisi"
+                        name="posisi"
+                        placeholder="Contoh: Ketua Divisi Sponsorship"
+                        required>
+                </div>
+
+                <div>
+                    <label for="mulai">Tanggal Mulai</label>
+                    <input
+                        type="date"
+                        id="mulai"
+                        name="mulai"
+                        required>
+                </div>
+
+                <div>
+                    <label for="selesai">Tanggal Selesai</label>
+                    <input
+                        type="date"
+                        id="selesai"
+                        name="selesai">
+                </div>
+
+                <div>
+                    <label for="deskripsi">Deskripsi Tanggung Jawab</label>
+                    <textarea
+                        id="deskripsi"
+                        name="deskripsi"
+                        rows="5"
+                        placeholder="Jelaskan peran dan tanggung jawab kamu..."
+                        required></textarea>
+                </div>
+
+                <div>
+                    <label for="sertifikat">Unggah Sertifikat</label>
+                    <input
+                        type="file"
+                        id="sertifikat"
+                        name="sertifikat"
+                        accept="image/*,.pdf">
+                </div>
+
+                <div>
+                    <label for="dokumentasi">Unggah Dokumentasi</label>
+                    <input
+                        type="file"
+                        id="dokumentasi"
+                        name="dokumentasi"
+                        accept="image/*"
+                        multiple>
+                </div>
+
+                <div>
+                    <button type="submit">Simpan Pengalaman</button>
+                    <a href="tambah_project.html">Batal</a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rifki Alfatah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
