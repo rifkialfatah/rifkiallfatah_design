@@ -1,139 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tambah Project - Rifki Alfatah Design</title>
+    <meta name="description" content="Halaman untuk menambahkan karya dan pengalaman Rifki Alfatah.">
+    <title>Tambah Project | Rifki Alfatah</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
+        <h1>Rifki Alfatah</h1>
+        <p>Graphic Designer</p>
 
-        <h1>Rifki Alfatah Design</h1>
-
-        <p>
-            Portfolio desain dan karya kreatif Rifki Alfatah.
-        </p>
-
-        <nav>
+        <nav aria-label="Navigasi utama">
             <a href="tugasindividu.html">Beranda</a>
-            <a href="tambah_project.html">Tambah Project</a>
-            <a href="detail-project.html">Detail Project</a>
+            <a href="karya_desain.html">Karya Desain</a>
+            <a href="pengalaman.html">Pengalaman</a>
+            <a href="tambah_project.html" aria-current="page">Tambah Project</a>
         </nav>
-
     </header>
 
-
     <main>
-
         <section>
-
             <h2>Tambah Project</h2>
-
             <p>
-                Tambahkan informasi project ke dalam portfolio.
+                Pilih jenis konten yang ingin kamu tambahkan ke dalam
+                portofolio.
             </p>
-
-            <form>
-
-                <div>
-                    <label for="nama-project">
-                        Nama Project:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="nama-project"
-                        name="nama-project"
-                        required
-                    >
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="kategori">
-                        Kategori:
-                    </label>
-
-                    <select
-                        id="kategori"
-                        name="kategori"
-                        required
-                    >
-                        <option value="">
-                            Pilih kategori
-                        </option>
-
-                        <option value="poster">
-                            Poster
-                        </option>
-
-                        <option value="ui-ux">
-                            UI/UX Design
-                        </option>
-
-                        <option value="branding">
-                            Branding
-                        </option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="deskripsi">
-                        Deskripsi Project:
-                    </label>
-
-                    <textarea
-                        id="deskripsi"
-                        name="deskripsi"
-                        rows="5"
-                        cols="40"
-                        required
-                    ></textarea>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="gambar">
-                        Gambar Project:
-                    </label>
-
-                    <input
-                        type="file"
-                        id="gambar"
-                        name="gambar"
-                        accept="image/*"
-                    >
-                </div>
-
-                <br>
-
-                <button type="submit">
-                    Simpan Project
-                </button>
-
-            </form>
-
         </section>
 
+        <section aria-label="Pilihan project">
+            <article class="project-card">
+                <h3>Tambah Desain</h3>
+                <p>
+                    Tambahkan karya desain seperti poster, banner,
+                    Instagram feed, atau photo editing.
+                </p>
+                <a href="tambah-desain.html">Tambah Desain</a>
+            </article>
+
+            <article class="project-card">
+                <h3>Tambah Pengalaman</h3>
+                <p>
+                    Tambahkan pengalaman organisasi atau kepanitiaan,
+                    termasuk posisi, periode, dan deskripsi kegiatan.
+                </p>
+                <a href="tambah-pengalaman.html">Tambah Pengalaman</a>
+            </article>
+        </section>
     </main>
 
-
     <footer>
-
-        <p>
-            &copy; 2026 Rifki Alfatah Design
-        </p>
-
+        <p>&copy; 2026 Rifki Alfatah. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
