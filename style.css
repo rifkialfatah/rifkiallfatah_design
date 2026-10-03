@@ -5,9 +5,29 @@ body{
     background-color: #b4d1ec(162, 27, 27);
 
 }
-h1 h2 h3{
-    color: #0D47A1(117, 17, 17);
+h1{
+    color:#2196F3(117, 17, 17);
     Font-weight: bold;
+    font-size: 36px;
 }
+h2{
+    color:2196F3(117, 17, 17);
+    font-weight: bold;
+    font-size: 28px;
+}
+h3{
+    color: #0D47A1(117, 17, 17);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header{
+    background-color : #A7D1FF;
+    color: 0D47A1;
+    padding : 20px;
+    text-align: center;
+}
+
+
 
 
