@@ -174,3 +174,64 @@ form button:hover{
     background-color: #2196F3;
     transform: translateY(-2px);
 }
+
+/* Responsive Design */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
