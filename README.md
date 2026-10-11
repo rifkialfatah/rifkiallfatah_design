@@ -1,23 +1,75 @@
 # RIFKI ALFATAH DESIGN
 
-Website portfolio untuk menampilkan hasil karya desain dari kegiatan kepanitiaan dan organisasi.
+Website portfolio untuk menampilkan hasil karya desain grafis dari kegiatan kepanitiaan dan organisasi, serta pengalaman dalam bidang desain kreatif.
+
+## Fitur Website
+
+- Halaman utama yang memperkenalkan diri dan menampilkan karya desain pilihan.
+- Halaman karya desain yang menampilkan koleksi poster dan kategori desain lainnya.
+- Halaman pengalaman organisasi dan kepanitiaan.
+- Halaman tambah project.
+- Formulir tambah desain dan tambah pengalaman.
+- Fitur detail karya melalui pop-up.
+- Navigasi responsif menggunakan Bootstrap.
+
+## Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- Bootstrap 5.3.3
+- JavaScript
 
 ## Screenshot
 
-### Halaman Utama
+### 1. Halaman Utama
+
 ![Home Page](tugass/home%20page.png)
 
-### Detail Project
+### 2. Halaman Karya Desain
+
+![Karya Desain](tugass/karya%20desain%20terbaru.png)
+
+### 3. Detail Project
+
 ![Detail Project](tugass/detail%20project.png)
 
-### Form Tambah Project
+### 4. Halaman Tambah Project
+
 ![Tambah Project](tugass/tambah%20project.png)
 
-### Isi Tambah Project
-![Isi Tambah Project](tugass/isi%20tambah%20project%20(3).png)
+### 5. Isi Form Tambah Project
 
-### Halaman Pengalaman
+![Isi Tambah Project](tugass/isi%20tambah%20project%20%283%29.png)
+
+### 6. Halaman Pengalaman
+
 ![Pengalaman](tugass/Pengalaman.png)
 
-### Form Tambah Pengalaman
+### 7. Form Tambah Desain
+
+![Form Tambah Desain](tugass/form%20tambah%20desain.png)
+
+### 8. Form Tambah Pengalaman
+
+![Form Tambah Pengalaman](tugass/form%20tambah%20pengalaman.png)
+
+### 9. Isi Form Tambah Pengalaman
+
 ![Isi Tambah Pengalaman](tugass/isi%20tambah%20pengalaman.png)
+
+### 10. Fitur Detail Karya
+
+![Fitur Detail](tugass/Fitur%20detail.png)
+
+## Cara Menjalankan Website
+
+1. Clone atau unduh repository ini.
+2. Pastikan seluruh file HTML, `style.css`, dan folder `aset/` berada dalam struktur folder yang sesuai.
+3. Buka file `tugasindividu.html` menggunakan browser.
+4. Gunakan navbar untuk menjelajahi halaman website.
+
+## Pengembang
+
+**Rifki Alfatah**
+
+Website ini dibuat sebagai proyek tugas individu mata kuliah Perancangan dan Pemrograman Web.
