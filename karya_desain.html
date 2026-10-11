@@ -1,83 +1,321 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kumpulan karya desain grafis Rifki Alfatah.">
-    <title>Karya | Rifki Alfatah</title>
+    <meta name="description"
+        content="Kumpulan karya desain grafis Rifki Alfatah, meliputi poster, banner, Instagram feed, dan photo editing.">
+
+    <title>Karya Desain | Rifki Alfatah</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .portfolio-heading {
+            color: #2196F3;
+            border-bottom: 2px solid #90CAF9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-card {
+            border: 1px solid #E0EAF5;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(13, 71, 161, 0.12);
+        }
+
+        .portfolio-image-wrapper {
+            height: 260px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F4F8FC;
+        }
+
+        .portfolio-image {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .portfolio-card .card-title {
+            color: #0D47A1;
+            font-weight: 700;
+        }
+
+        .portfolio-card .card-text {
+            color: #365577;
+        }
+
+        .category-section {
+            background-color: #FFFFFF;
+            border: 1px solid #E0EAF5;
+            border-radius: 12px;
+            padding: 24px;
+            height: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .portfolio-image-wrapper {
+                height: 230px;
+            }
+
+            .category-section {
+                padding: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .portfolio-card {
+                transition: none;
+            }
+
+            .portfolio-card:hover {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
+    <!-- HEADER -->
+    <header class="text-center py-4">
         <h1>RIFKI ALFATAH</h1>
-        <p>Graphic Designer</p>
-
-
-        <nav aria-label="Navigasi utama">
-            <a href="tugasindividu.html">Home</a>
-            <a href="karya_desain.html" aria-current="page">Karya</a>
-            <a href="pengalaman.html">Pengalaman</a>
-            <a href="tambah_project.html">Tambah Project</a>
-        </nav>
-
+        <p>Graphic Designer | Creative Portfolio</p>
     </header>
 
-    <main>
-        <section>
-            <h2>My Works</h2>
+    <!-- NAVIGASI BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm"
+        aria-label="Navigasi utama">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="./tugasindividu.html">
+                My Portfolio
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarPortfolio"
+                aria-controls="navbarPortfolio"
+                aria-expanded="false"
+                aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPortfolio">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./tugasindividu.html">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold"
+                            href="./karya_desain.html"
+                            aria-current="page">
+                            Karya Desain
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pengalaman.html">
+                            Pengalaman
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tambah_project.html">
+                            Tambah Project
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container py-5">
+
+        <!-- INTRODUCTION -->
+        <section class="mb-5" aria-labelledby="works-heading">
+            <h2 id="works-heading" class="portfolio-heading">
+                My Works
+            </h2>
+
             <p>
-                Berikut adalah kumpulan karya desain yang telah saya buat,
-                mulai dari poster, banner, Instagram feed, hingga photo editing.
+                Selamat datang di halaman karya desain saya. Di sini,
+                kamu dapat melihat beberapa karya desain grafis yang
+                pernah saya buat, mulai dari poster hingga konten media sosial.
             </p>
         </section>
 
-        <section aria-labelledby="poster-heading">
-            <h2 id="poster-heading">Poster</h2>
+        <!-- POSTER GALLERY -->
+        <section class="mb-5" aria-labelledby="poster-heading">
+            <h2 id="poster-heading" class="portfolio-heading">
+                Poster Design
+            </h2>
 
-            <div class="project-list">
-                <article class="project-card">
-                    <img src="aset/poster 1.png" alt="Karya desain poster pertama Rifki Alfatah">
-                    <h3>Poster 1</h3>
-                    <p>Karya desain poster.</p>
-                </article>
+            <p class="mb-4">
+                Berikut adalah beberapa karya poster pilihan dalam portofolio saya.
+            </p>
 
-                <article class="project-card">
-                    <img src="aset/poster 2.png" alt="Karya desain poster kedua Rifki Alfatah">
-                    <h3>Poster 2</h3>
-                    <p>Karya desain poster.</p>
-                </article>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-                <article class="project-card">
-                    <img src="aset/poster 3.png" alt="Karya desain poster ketiga Rifki Alfatah">
-                    <h3>Poster 3</h3>
-                    <p>Karya desain poster.</p>
-                </article>
+                <!-- POSTER 1 -->
+                <div class="col">
+                    <article class="card portfolio-card h-100">
+
+                        <div class="portfolio-image-wrapper">
+                            <img
+                                src="aset/poster 1.png"
+                                class="portfolio-image"
+                                alt="Poster desain pertama karya Rifki Alfatah"
+                                loading="lazy">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Poster Design 01</h3>
+                            <p class="card-text">
+                                Karya poster dengan konsep visual promosi yang menarik.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- POSTER 2 -->
+                <div class="col">
+                    <article class="card portfolio-card h-100">
+
+                        <div class="portfolio-image-wrapper">
+                            <img
+                                src="aset/poster 2.png"
+                                class="portfolio-image"
+                                alt="Poster Idul Adha dengan ilustrasi sapi"
+                                loading="lazy">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Poster Design 02</h3>
+                            <p class="card-text">
+                                Desain poster dengan pendekatan visual kreatif.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- POSTER 3 -->
+                <div class="col">
+                    <article class="card portfolio-card h-100">
+
+                        <div class="portfolio-image-wrapper">
+                            <img
+                                src="aset/poster 3.png"
+                                class="portfolio-image"
+                                alt="Poster perayaan Yesus Kristus dengan komposisi tipografi dan ilustrasi"
+                                loading="lazy">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Poster Design 03</h3>
+                            <p class="card-text">
+                                Poster dengan komposisi tipografi dan ilustrasi.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
             </div>
         </section>
 
-        <section aria-labelledby="banner-heading">
-            <h2 id="banner-heading">Banner</h2>
-            <p>Karya desain banner akan ditambahkan di sini.</p>
+        <!-- KATEGORI DESAIN LAINNYA -->
+        <section class="mb-5" aria-labelledby="categories-heading">
+            <h2 id="categories-heading" class="portfolio-heading">
+                Other Design Categories
+            </h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <article class="category-section">
+                        <h3 class="h5 text-primary">Banner Design</h3>
+                        <p class="mb-0">
+                            Karya banner untuk kebutuhan promosi, publikasi,
+                            dan kegiatan organisasi.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="category-section">
+                        <h3 class="h5 text-primary">Instagram Feed</h3>
+                        <p class="mb-0">
+                            Desain konten media sosial untuk publikasi,
+                            informasi, dan promosi acara.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="category-section">
+                        <h3 class="h5 text-primary">Photo Editing</h3>
+                        <p class="mb-0">
+                            Hasil penyuntingan foto dan eksplorasi visual kreatif.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
         </section>
 
-        <section aria-labelledby="feed-heading">
-            <h2 id="feed-heading">Instagram Feed</h2>
-            <p>Karya desain Instagram feed akan ditambahkan di sini.</p>
+        <!-- KEMBALI KE BERANDA -->
+        <section class="text-center mt-5" aria-label="Navigasi kembali">
+            <a href="./tugasindividu.html"
+                class="btn btn-primary px-4 py-2">
+                &larr; Kembali ke Beranda
+            </a>
         </section>
 
-        <section aria-labelledby="editing-heading">
-            <h2 id="editing-heading">Photo Editing</h2>
-            <p>Karya photo editing akan ditambahkan di sini.</p>
-        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Rifki Alfatah. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 Rifki Alfatah. All rights reserved.
+        </p>
     </footer>
 
-</body>
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
+</body>
 </html>
