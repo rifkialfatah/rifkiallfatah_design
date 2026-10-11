@@ -1,6 +1,10 @@
-/* GENERAL */
+/* GENERAL*/
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -61,8 +65,8 @@ header h1 {
     margin-top: 0;
 }
 
-/* NAVIGATION */
-nav {
+/* NAV*/
+body > header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,7 +76,7 @@ nav {
     background-color: #E6F3FF;
 }
 
-nav a {
+body > header nav a {
     display: inline-block;
     padding: 9px 15px;
     border-radius: 6px;
@@ -83,10 +87,46 @@ nav a {
                 color 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus-visible {
+body > header nav a:hover,
+body > header nav a:focus-visible {
     color: #FFFFFF;
     background-color: #2196F3;
+}
+
+/*  BOOTSTRAP NAVBAR*/
+.navbar {
+    background-color: #E6F3FF !important;
+}
+
+.navbar .navbar-brand {
+    color: #0D47A1;
+}
+
+.navbar .navbar-brand:hover {
+    color: #2196F3;
+}
+
+.navbar .nav-link {
+    color: #0D47A1;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible,
+.navbar .nav-link.active {
+    color: #0D47A1;
+    background-color: #CDE6FF;
+}
+
+.navbar .navbar-toggler {
+    border-color: #90CAF9;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.2);
 }
 
 /* MAIN CONTENT */
@@ -95,6 +135,10 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px;
+}
+
+main.container {
+    max-width: 1200px;
 }
 
 section {
@@ -119,7 +163,7 @@ li {
     margin-bottom: 8px;
 }
 
-/* PROJECT CARDS */
+/* CARD */
 .project-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -165,8 +209,27 @@ li {
     margin-bottom: 14px;
 }
 
-/* BUTTONS */
-button,
+/* BUTTONS*/
+button:not(.navbar-toggler):not(.btn) {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0D47A1;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+button:not(.navbar-toggler):not(.btn):hover {
+    background-color: #2196F3;
+    transform: translateY(-2px);
+}
+
 .detail-button {
     display: inline-block;
     padding: 10px 18px;
@@ -182,7 +245,6 @@ button,
                 transform 0.2s ease;
 }
 
-button:hover,
 .detail-button:hover {
     background-color: #2196F3;
     transform: translateY(-2px);
@@ -197,14 +259,13 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
-/* GENERAL LINKS */
+/*GENERAL LINKS */
 main a {
-    font-weight: bold;
     text-underline-offset: 4px;
 }
 
-/* FORMS */
-form {
+/* FORM */
+form:not(.bootstrap-form) {
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -215,16 +276,16 @@ form {
     box-shadow: 0 4px 10px rgba(13, 71, 161, 0.08);
 }
 
-form label {
+form:not(.bootstrap-form) label {
     display: block;
     margin-bottom: 7px;
     color: #0D47A1;
     font-weight: bold;
 }
 
-form input,
-form select,
-form textarea {
+form:not(.bootstrap-form) input,
+form:not(.bootstrap-form) select,
+form:not(.bootstrap-form) textarea {
     display: block;
     width: 100%;
     margin-bottom: 18px;
@@ -237,24 +298,24 @@ form textarea {
     font-size: 16px;
 }
 
-form textarea {
+form:not(.bootstrap-form) textarea {
     min-height: 110px;
     resize: vertical;
 }
 
-form input:focus,
-form select:focus,
-form textarea:focus {
+form:not(.bootstrap-form) input:focus,
+form:not(.bootstrap-form) select:focus,
+form:not(.bootstrap-form) textarea:focus {
     outline: none;
     border-color: #2196F3;
     box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
 }
 
-form button {
+form:not(.bootstrap-form) button {
     margin-top: 4px;
 }
 
-/* DETAIL DIALOG */
+/*  DETAIL DIALOG*/
 #detail-dialog {
     width: min(600px, calc(100% - 32px));
     max-height: 85vh;
@@ -299,7 +360,7 @@ form button {
     overflow-wrap: anywhere;
 }
 
-/* FOOTER */
+/*FOOTER */
 footer {
     margin-top: 30px;
     padding: 22px 15px;
@@ -312,7 +373,7 @@ footer p {
     margin-bottom: 0;
 }
 
-/* TABLET */
+/*TABLET */
 @media screen and (max-width: 768px) {
     main {
         padding: 16px;
@@ -331,16 +392,16 @@ footer p {
         height: 220px;
     }
 
-    nav {
+    body > header nav {
         gap: 5px;
     }
 
-    nav a {
+    body > header nav a {
         margin: 2px;
     }
 }
 
-/* SMARTPHONE */
+/*SMARTPHONE */
 @media screen and (max-width: 480px) {
     body {
         font-size: 14px;
@@ -375,19 +436,19 @@ footer p {
         height: 230px;
     }
 
-    nav {
+    body > header nav {
         flex-direction: column;
         align-items: stretch;
     }
 
-    nav a {
+    body > header nav a {
         display: block;
         width: 100%;
         margin: 0;
         text-align: center;
     }
 
-    form {
+    form:not(.bootstrap-form) {
         padding: 16px;
     }
 
@@ -396,12 +457,15 @@ footer p {
     }
 }
 
-/* REDUCE MOTION */
+/*REDUCE MOTION*/
 @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
     *,
     *::before,
     *::after {
-        scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
