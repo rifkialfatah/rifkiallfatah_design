@@ -61,6 +61,16 @@ Website portfolio untuk menampilkan hasil karya desain grafis dari kegiatan kepa
 
 ![Fitur Detail](tugass/Fitur%20detail.png)
 
+### 11. form_tambah design
+
+![Fitur form tambah design](tugass/form_tambah%20desain.png)
+
+### 12. fitur hide
+![fitur hide form](tugass//hide%20form_tambah%20desain.png)
+
+### 13. filter pencarian 
+
+![fitur cari dan filter](tugass/Filter%20dan%20pencarian.png)
 ## Cara Menjalankan Website
 
 1. Clone atau unduh repository ini.
