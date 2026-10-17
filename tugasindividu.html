@@ -1,19 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portofolio desain dan pengalaman Rifki Alfatah.">
+    <meta name="description" content="Portofolio desain dan pengalaman Rifki Alfatah.">
 
     <title>Rifki Alfatah | Design Portfolio</title>
 
     <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -138,8 +134,7 @@
     </header>
 
     <!-- NAVIGASI BOOTSTRAP -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm"
-        aria-label="Navigasi utama">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" aria-label="Navigasi utama">
 
         <div class="container">
 
@@ -147,13 +142,8 @@
                 My Portfolio
             </a>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Buka navigasi">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Buka navigasi">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -161,9 +151,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold"
-                            href="./tugasindividu.html"
-                            aria-current="page">
+                        <a class="nav-link active fw-bold" href="./tugasindividu.html" aria-current="page">
                             Beranda
                         </a>
                     </li>
@@ -215,162 +203,36 @@
                 saya kerjakan.
             </p>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-                <!-- POSTER 1 -->
-                <div class="col">
-                    <article class="card portfolio-card h-100">
-
-                        <div class="portfolio-image-wrapper">
-                            <img
-                                src="aset/poster 1.png"
-                                class="portfolio-image"
-                                alt="Poster desain pertama karya Rifki Alfatah"
-                                loading="lazy">
-                        </div>
-
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title h5">Poster Design 01</h3>
-
-                            <p class="card-text">
-                                Salah satu karya poster dalam portofolio desain saya.
-                            </p>
-
-                            <button type="button"
-                                class="btn btn-primary detail-button mt-auto"
-                                data-title="Poster Design 01"
-                                data-image="aset/poster 1.png"
-                                data-alt="Poster desain pertama karya Rifki Alfatah"
-                                data-description="Karya desain poster pertama dalam portofolio Rifki Alfatah. Informasi tema dan tujuan desain dapat dilengkapi sesuai proyek aslinya."
-                                data-category="Poster"
-                                data-year="Belum diisi"
-                                data-tools="Belum diisi">
-                                Lihat Detail
-                            </button>
-                        </div>
-
-                    </article>
+            <!-- PENCARIAN DAN FILTER -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-8">
+                    <input type="text" id="cari-karya" class="form-control" placeholder="Cari karya desain...">
                 </div>
 
-                <!-- POSTER 2 -->
-                <div class="col">
-                    <article class="card portfolio-card h-100">
-
-                        <div class="portfolio-image-wrapper">
-                            <img
-                                src="aset/poster 2.png"
-                                class="portfolio-image"
-                                alt="Poster desain kedua karya Rifki Alfatah"
-                                loading="lazy">
-                        </div>
-
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title h5">Poster Design 02</h3>
-
-                            <p class="card-text">
-                                Karya poster dengan pendekatan visual kreatif.
-                            </p>
-
-                            <button type="button"
-                                class="btn btn-primary detail-button mt-auto"
-                                data-title="Poster Design 02"
-                                data-image="aset/poster 2.png"
-                                data-alt="Poster desain kedua karya Rifki Alfatah"
-                                data-description="Karya desain poster kedua dalam portofolio Rifki Alfatah. Informasi tema dan tujuan desain dapat dilengkapi sesuai proyek aslinya."
-                                data-category="Poster"
-                                data-year="Belum diisi"
-                                data-tools="Belum diisi">
-                                Lihat Detail
-                            </button>
-                        </div>
-
-                    </article>
+                <div class="col-md-4">
+                    <select id="filter-kategori" class="form-select">
+                        <option value="Semua">Semua Kategori</option>
+                        <option value="Poster">Poster</option>
+                        <option value="Banner">Banner</option>
+                        <option value="Instagram Feed">Instagram Feed</option>
+                        <option value="Photo Editing">Photo Editing</option>
+                    </select>
                 </div>
-
-                <!-- POSTER 3 -->
-                <div class="col">
-                    <article class="card portfolio-card h-100">
-
-                        <div class="portfolio-image-wrapper">
-                            <img
-                                src="aset/poster 3.png"
-                                class="portfolio-image"
-                                alt="Poster desain ketiga karya Rifki Alfatah"
-                                loading="lazy">
-                        </div>
-
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title h5">Poster Design 03</h3>
-
-                            <p class="card-text">
-                                Bagian dari kumpulan karya desain kreatif saya.
-                            </p>
-
-                            <button type="button"
-                                class="btn btn-primary detail-button mt-auto"
-                                data-title="Poster Design 03"
-                                data-image="aset/poster 3.png"
-                                data-alt="Poster desain ketiga karya Rifki Alfatah"
-                                data-description="Karya desain poster ketiga dalam portofolio Rifki Alfatah. Informasi tema dan tujuan desain dapat dilengkapi sesuai proyek aslinya."
-                                data-category="Poster"
-                                data-year="Belum diisi"
-                                data-tools="Belum diisi">
-                                Lihat Detail
-                            </button>
-                        </div>
-
-                    </article>
-                </div>
-
             </div>
 
-            <!-- LINK KE HALAMAN KARYA -->
+            <p>
+                Jumlah karya ditemukan:
+                <strong id="jumlah-karya">0</strong>
+            </p>
+
+            <!-- KARYA AKAN DITAMPILKAN OLEH JAVASCRIPT -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="portfolio-list">
+            </div>
+
             <div class="text-center mt-4">
                 <a href="./karya_desain.html" class="btn btn-primary px-4">
                     Lihat Semua Karya Desain
                 </a>
-            </div>
-        </section>
-
-        <!-- KATEGORI -->
-        <section id="kategori" class="mb-5">
-            <h2 class="portfolio-section-title">Kategori Desain</h2>
-
-            <p>
-                Karya desain saya dikelompokkan berdasarkan jenis dan
-                kebutuhan visualnya.
-            </p>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-
-                <div class="col">
-                    <div class="category-box">
-                        <h3 class="h5 text-primary">Poster</h3>
-                        <p class="mb-0">Desain poster untuk publikasi dan promosi.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="category-box">
-                        <h3 class="h5 text-primary">Banner</h3>
-                        <p class="mb-0">Desain banner untuk kegiatan dan acara.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="category-box">
-                        <h3 class="h5 text-primary">Instagram Feed</h3>
-                        <p class="mb-0">Konten visual untuk media sosial.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="category-box">
-                        <h3 class="h5 text-primary">Photo Editing</h3>
-                        <p class="mb-0">Penyuntingan foto dan eksplorasi visual.</p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -391,12 +253,9 @@
 
     </main>
 
-    <!-- POP-UP DETAIL -->
     <dialog id="detail-dialog" aria-labelledby="dialog-title">
 
-        <button type="button"
-            id="close-dialog"
-            class="btn btn-sm btn-outline-secondary float-end"
+        <button type="button" id="close-dialog" class="btn btn-sm btn-outline-secondary float-end"
             aria-label="Tutup detail">
             Tutup ✕
         </button>
@@ -429,58 +288,14 @@
 
     </dialog>
 
-    <!-- FOOTER -->
     <footer class="text-center py-4">
         <p class="mb-0">
             &copy; 2026 Rifki Alfatah. All rights reserved.
         </p>
     </footer>
-
-    <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JAVASCRIPT POP-UP -->
-    <script>
-        const dialog = document.getElementById("detail-dialog");
-        const closeButton = document.getElementById("close-dialog");
-
-        const dialogTitle = document.getElementById("dialog-title");
-        const dialogImage = document.getElementById("dialog-image");
-        const dialogDescription = document.getElementById("dialog-description");
-        const dialogCategory = document.getElementById("dialog-category");
-        const dialogYear = document.getElementById("dialog-year");
-        const dialogTools = document.getElementById("dialog-tools");
-
-        const detailButtons = document.querySelectorAll(".detail-button");
-
-        detailButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                dialogTitle.textContent = button.dataset.title;
-                dialogImage.src = button.dataset.image;
-                dialogImage.alt = button.dataset.alt;
-                dialogDescription.textContent = button.dataset.description;
-                dialogCategory.textContent = button.dataset.category;
-                dialogYear.textContent = button.dataset.year;
-                dialogTools.textContent = button.dataset.tools;
-
-                dialog.showModal();
-            });
-        });
-
-        closeButton.addEventListener("click", function () {
-            dialog.close();
-        });
-
-        dialog.addEventListener("click", function (event) {
-            if (event.target === dialog) {
-                dialog.close();
-            }
-        });
-
-        dialog.addEventListener("close", function () {
-            dialogImage.src = "";
-        });
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
